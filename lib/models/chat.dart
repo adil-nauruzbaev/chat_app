@@ -1,4 +1,4 @@
-import 'package:chat_app/models/message.dart';
+import 'package:chat_app_test/models/message.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Chat {
