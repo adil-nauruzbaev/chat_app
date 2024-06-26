@@ -69,6 +69,8 @@ flutter:
   assets:
     - assets/images/icons/Arrow_left_s.png
     - assets/images/icons/Attach.png
+    - assets/images/icons/Audio.png 
+    - assets/images/icons/Search_s.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
