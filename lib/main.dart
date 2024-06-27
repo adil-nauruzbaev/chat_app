@@ -16,6 +16,7 @@ Future<void> setup() async {
   await registeredServices();
 }
 
+// ignore: must_be_immutable
 class MyApp extends StatelessWidget {
   final GetIt _getIt = GetIt.instance;
   late NavigationService _navigationService;
