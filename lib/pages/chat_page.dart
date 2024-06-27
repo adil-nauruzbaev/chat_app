@@ -154,11 +154,18 @@ class _ChatPageState extends State<ChatPage> {
                           color: ColorSelect.primaryLabel, fontSize: 14),
                     ),
                     const SizedBox(width: 12),
-                    Text(
-                      "${message.createdAt.hour}:${message.createdAt.minute}",
-                      style: const TextStyle(
-                          color: ColorSelect.primaryLabel, fontSize: 12),
-                    ),
+                    if (message.createdAt.minute.toString().length == 1)
+                      Text(
+                        "${message.createdAt.hour}:0${message.createdAt.minute}",
+                        style: const TextStyle(
+                            color: ColorSelect.primaryLabel, fontSize: 12),
+                      ),
+                    if (message.createdAt.minute.toString().length == 2)
+                      Text(
+                        "${message.createdAt.hour}:${message.createdAt.minute}",
+                        style: const TextStyle(
+                            color: ColorSelect.primaryLabel, fontSize: 12),
+                      ),
                   ],
                 );
               },
